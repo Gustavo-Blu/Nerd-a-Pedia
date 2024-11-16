@@ -52,7 +52,7 @@ export default function RootLayout({
                     <div>
                       <DropdownMenu>
                         <DropdownMenuTrigger>
-                          <Button>Menu</Button>
+                          <div role="button">Menu</div>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
                           <DropdownMenuItem>
