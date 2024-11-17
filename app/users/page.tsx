@@ -12,9 +12,11 @@ const UserPage: NextPage = async () => {
     <section>
       <h1>Users</h1>
       <pre>{JSON.stringify(users, null, 2)}</pre>
-      {users?.map((user) => {
-        return <SingleUser user={user} key={user.id} />;
-      })}
+      <div className="flex justify-around">
+        {users?.map((user) => {
+          return <SingleUser user={user} key={user.id} />;
+        })}
+      </div>
     </section>
   );
 };

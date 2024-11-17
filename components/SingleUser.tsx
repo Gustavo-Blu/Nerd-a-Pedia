@@ -7,7 +7,7 @@ interface SingleUserProps {
 
 const SingleUser: NextPage<SingleUserProps> = async ({ user }) => {
   return (
-    <section>
+    <section className="bg-gray-700">
       <h1>
         {user?.firstName} {user?.lastName}
       </h1>

@@ -2,11 +2,9 @@ import { NextPage } from 'next';
 import { createClient } from '@/utils/supabase/server';
 import { Tables } from '@/supabase';
 
-interface PeoplePageProps {
-  params: {
-    id: number;
-  };
-}
+type PeoplePageProps = {
+  params: Promise<{ id: string }>;
+};
 
 const PeoplePage: NextPage<PeoplePageProps> = async ({ params }) => {
   const { id } = await params;
